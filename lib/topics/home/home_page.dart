@@ -7,6 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+
       appBar: AppBar(
         title: const Text('Home Page'),
       ),
@@ -38,6 +39,16 @@ class HomePage extends StatelessWidget {
                         Navigator.pushNamed(context, '/painter');
                       },
                       child: const Text('Go to CustomPainter')),
+                ),
+                const SizedBox(height: 20,),
+                SizedBox(
+                  height: 50,
+                  width: 300,
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/container');
+                      },
+                      child: const Text('Go to CustomContainer')),
                 )
               ],
             ),

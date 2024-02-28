@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_in_focus/topics/custom_clipper/custom_clipper_page.dart';
+import 'package:flutter_in_focus/topics/custom_clipper/view_states/my_custom_container.dart';
 import 'package:flutter_in_focus/topics/custom_painter/custom_painter_page.dart';
 import 'package:flutter_in_focus/topics/home/home_page.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         '/' : (context) => const HomePage(),
         '/clipper': (context) => const CustomClipperPage(),
         '/painter' : (context) => const CustomPainterPage(),
+        '/container' : (context) => const MyCustomContainer(),
       },
     );
   }
