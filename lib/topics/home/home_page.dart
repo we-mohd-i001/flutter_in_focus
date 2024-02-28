@@ -49,6 +49,16 @@ class HomePage extends StatelessWidget {
                         Navigator.pushNamed(context, '/container');
                       },
                       child: const Text('Go to CustomContainer')),
+                ),
+                const SizedBox(height: 20,),
+                SizedBox(
+                  height: 50,
+                  width: 300,
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/clock');
+                      },
+                      child: const Text('Go to Custom Clock')),
                 )
               ],
             ),
